@@ -2,13 +2,9 @@
 import Head from 'next/head'
 import Title from '@/components/common/Title/Title'
 import Tag from '@/components/common/Tag'
-import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Styles
 import style from '@/styles/Sobre.module.scss'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
 
 // Assets
 import MulherLendo from '../assets/mulher-lendo.webp.png'
@@ -18,9 +14,6 @@ import MulherComProf from '../assets/Sobre/menina-com-professora.webp'
 import MulherComDiplo from '../assets/Sobre/menina-com-certificacao.webp'
 import HomemComCofre from '../assets/Sobre/homem-com-cofrinho.webp'
 import MulherPoderosa from '../assets/Sobre/menina-poderosa.webp'
-
-// Modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules'
 
 export default function Sobre() {
   return (
@@ -109,111 +102,6 @@ export default function Sobre() {
             <div className={style.titleGoals}>
               <Title type="Xl">Objetivos da Menina de UX</Title>
             </div>
-
-            <Swiper
-              navigation={false}
-              pagination={true}
-              mousewheel={false}
-              keyboard={true}
-              modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-              autoplay={true}
-              className={style.mySwiper}
-            >
-              <SwiperSlide>
-                <div className={style.contentSwiper}>
-                  <div className={style.text}>
-                    <Title type="Xs">
-                      Ensinar e trazer conteúdos incríveis{' '}
-                    </Title>
-                    <p>
-                      A Menina de UX busca poder ajudar meninas que queiram
-                      começar suas carreiras em design e/ou tecnologia.
-                    </p>
-                    <p>
-                      <Tag type="Strong">Por quê?</Tag>
-                      <br />
-                      Porque ela acredita que qualquer menina pode ser o que
-                      quiser e que podemos aprender qualquer coisa.
-                    </p>
-                    <p>
-                      <Tag type="Strong">Como?</Tag>
-                      <br />
-                      Criando aulas, apostilas e conteúdos sobre UX e carreira
-                      de forma totalmente gratuita e online!
-                    </p>
-                  </div>
-                  <div className={style.img}>
-                    <img
-                      src={MulherComProf.src}
-                      alt="Menina com uma professora."
-                    />
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className={style.contentSwiper}>
-                  <div className={style.text}>
-                    <Title type="Xs">
-                      Levar ensino gratuito e de qualidade para todos
-                    </Title>
-                    <p>
-                      O site da Menina de UX é uma das maiores bibliotecas de
-                      cursos gratuitos, além de estar sempre por dentro de
-                      processos seletivos para cursos de tecnologia em grandes
-                      empresas. <br /> <br />
-                      Além disso, as pessoas podem ficar por dentro de
-                      lançamentos de cursos em tempo real graças ao{' '}
-                      <Tag type="Strong">canal no Telegram</Tag>!
-                    </p>
-                  </div>
-
-                  <div className={style.img}>
-                    <img
-                      src={MulherComDiplo.src}
-                      alt="Menina com uma professora."
-                    />
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className={style.contentSwiper}>
-                  <div className={style.text}>
-                    <Title type="Xs">Trazer economia</Title>
-                    <p>
-                      Com a divulgação de cursos, processos seletivos e a
-                      criação das aulas e apostilas, acaba não sendo necessário
-                      (a não ser que você queira fazer) comprar um curso
-                      caríssimo. <br /> <br />
-                      As únicas coisas em que você vai precisar investir são o
-                      seu tempo e o seu esforço!
-                    </p>
-                  </div>
-
-                  <div className={style.img}>
-                    <img src={HomemComCofre.src} alt="Homem com cofre." />
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className={style.contentSwiper}>
-                  <div className={style.text}>
-                    <Title type="Xs">Capacitar jovens meninas</Title>
-                    <p>
-                      Ajudando meninas como eu, quero poder trazer mais meninas
-                      para o mundo da tecnologia e transformar artistas de
-                      telinhas em UI/UX Designers!
-                    </p>
-                  </div>
-
-                  <div className={style.img}>
-                    <img src={MulherPoderosa.src} alt="Girl power!" />
-                  </div>
-                </div>
-              </SwiperSlide>
-            </Swiper>
           </div>
         </section>
       </main>
