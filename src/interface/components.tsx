@@ -1,3 +1,4 @@
+import TCarousel from '@/Types/types'
 import { ReactNode } from 'react'
 
 // Interface text - Base
@@ -98,4 +99,23 @@ export interface IButton {
   icon?: React.ElementType
   url?: string
   type?: 'Blue' | 'Pink' | 'Disabled'
+}
+
+export interface ICarousel {
+  size: 'Default' | '80%'
+  columns: 'one' | 'two'
+  array: TCarousel
+}
+
+export interface ICarouselItem {
+  item: {
+    icon?: string
+    src?: string
+    alt?: string
+    title: string
+    description: string
+    subtitle1?: string
+    subdescription1?: string
+    directionImage: 'left' | 'right'
+  }
 }

@@ -10,10 +10,8 @@ import style from '@/styles/Sobre.module.scss'
 import MulherLendo from '../assets/mulher-lendo.webp.png'
 import MulherEstudando from '../assets/mulher-estudando.webp.png'
 import MulherAcenando from '../assets/mulher-acenando.webp.png'
-import MulherComProf from '../assets/Sobre/menina-com-professora.webp'
-import MulherComDiplo from '../assets/Sobre/menina-com-certificacao.webp'
-import HomemComCofre from '../assets/Sobre/homem-com-cofrinho.webp'
-import MulherPoderosa from '../assets/Sobre/menina-poderosa.webp'
+import ITEMS_SOBRE from '@/utilities/ArraySlideSobre'
+import Carousel from '@/components/Carrossel'
 
 export default function Sobre() {
   return (
@@ -102,6 +100,8 @@ export default function Sobre() {
             <div className={style.titleGoals}>
               <Title type="Xl">Objetivos da Menina de UX</Title>
             </div>
+
+            <Carousel array={ITEMS_SOBRE} columns="two" size="Default" />
           </div>
         </section>
       </main>
