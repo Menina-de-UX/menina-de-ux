@@ -8,10 +8,9 @@ import style from './index.module.scss'
 
 const CarouselItem = ({ item }: ICarouselItem) => {
   return (
-    <div className={style.carrosselItem}>
-      <div></div>
-      <img src={item.icon} alt={item.alt} />
-      <div className="carrossel-item-text">{item.description}</div>
+    <div className={style.carouselItem}>
+      <img src={item.icon} alt={item.alt} className={style.carouselImg} />
+      <div className={style.carrosselItemText}>{item.description}</div>
     </div>
   )
 }
@@ -27,6 +26,14 @@ function Carousel({ array, size = 'Default', columns = 'two' }: ICarousel) {
         {array.map((item, index) => {
           return <CarouselItem item={item} key={index} />
         })}
+      </div>
+      <div className="carousel-buttons">
+        <button></button>
+        <div className="indicators">
+          <div className={style.point}></div>
+          <div className={style.point}></div>
+        </div>
+        <button>arrow_right</button>
       </div>
     </div>
   )
