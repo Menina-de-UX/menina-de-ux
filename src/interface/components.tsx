@@ -1,4 +1,4 @@
-import TCarousel from '@/Types/types'
+// import TCarousel from '@/Types/types'
 import { ReactNode } from 'react'
 
 // Interface text - Base
@@ -101,21 +101,33 @@ export interface IButton {
   type?: 'Blue' | 'Pink' | 'Disabled'
 }
 
+// export interface ICarousel {
+//   size?: 'Default'
+//   columns?: 'one' | 'two'
+//   array: TCarousel
+// }
+
+// export interface ICarouselItem {
+//   item: {
+//     icon?: string
+//     src?: string
+//     alt?: string
+//     title: string
+//     description: string
+//     subtitle1?: string
+//     subdescription1?: string
+//     subtitle2?: string
+//     subdescription2?: string
+//     subtitle3?: string
+//     subdescription3?: string
+//     directionImage: 'left' | 'right'
+//   }
+// }
+
 export interface ICarousel {
-  size: 'Default' | '80%'
-  columns: 'one' | 'two'
-  array: TCarousel
+  children: ReactNode
 }
 
 export interface ICarouselItem {
-  item: {
-    icon?: string
-    src?: string
-    alt?: string
-    title: string
-    description: string
-    subtitle1?: string
-    subdescription1?: string
-    directionImage: 'left' | 'right'
-  }
+  children: ReactNode
 }
