@@ -10,24 +10,6 @@ import style from './index.module.scss'
 import { BiSolidRectangle } from 'react-icons/bi'
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 
-// const CarouselItem = ({ item }: ICarouselItem) => {
-//   return (
-//     <div className={style.carouselItem}>
-//       <img src={item.icon} alt={item.alt} className={style.carouselImg} />
-//       <div className={style.carouselItemText}>
-//         <Title type="Lg">{item.title}</Title>
-//         <p>{item.description}</p>
-//         <br />
-//         <Title type="Xs">{item.subtitle1}</Title>
-//         <p>{item.subdescription1}</p>
-//         <br />
-//         <Title type="Xs">{item.subtitle2}</Title>
-//         <p>{item.subdescription2}</p>
-//       </div>
-//     </div>
-//   )
-// }
-
 export function CarouselItem({ children }: ICarouselItem) {
   return <div className={style.carouselItem}>{children}</div>
 }
