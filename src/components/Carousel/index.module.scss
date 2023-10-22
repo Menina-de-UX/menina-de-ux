@@ -2,9 +2,10 @@
 
 .carousel {
   position: relative;
-  margin: auto;
+  margin: 0 auto;
   overflow: hidden;
   width: 100%;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;

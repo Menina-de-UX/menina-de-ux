@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react'
+// Hooks
+import { useState, useEffect, useCallback, Children } from 'react'
 
 // Interface
-import { ICarousel, ICarouselItem } from '@/interface/components'
+import { ICarousel } from '@/interface/components'
 
 // Style
 import style from './index.module.scss'
@@ -10,14 +11,14 @@ import style from './index.module.scss'
 import { BiSolidRectangle } from 'react-icons/bi'
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 
-export function CarouselItem({ children }: ICarouselItem) {
+function CarouselItem({ children }: ICarousel) {
   return <div className={style.carouselItem}>{children}</div>
 }
 
 function Carousel({ children }: ICarousel) {
-  const [activeIndex, setActiveIndex] = React.useState(0)
-  const childArray = React.Children.toArray(children)
-  const updateIndex = React.useCallback(
+  const [activeIndex, setActiveIndex] = useState(0)
+  const childArray = Children.toArray(children)
+  const updateIndex = useCallback(
     (newIndex: number) => {
       if (newIndex < 0) {
         newIndex = 0
@@ -30,12 +31,12 @@ function Carousel({ children }: ICarousel) {
     [childArray],
   )
 
-  const autoSlide = React.useCallback(() => {
+  const autoSlide = useCallback(() => {
     updateIndex(activeIndex + 1)
   }, [activeIndex, updateIndex])
 
   useEffect(() => {
-    const intervalId = setInterval(autoSlide, 2500)
+    const intervalId = setInterval(autoSlide, 3000)
     return () => {
       clearInterval(intervalId)
     }
@@ -95,4 +96,4 @@ function Carousel({ children }: ICarousel) {
   )
 }
 
-export default Carousel
+export { Carousel, CarouselItem }

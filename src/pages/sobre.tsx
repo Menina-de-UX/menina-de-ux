@@ -16,7 +16,7 @@ import HomemComCofre from '../assets/Sobre/homem-com-cofrinho.webp'
 import MulherPoderosa from '../assets/Sobre/menina-poderosa.webp'
 
 // import ITEMS_SOBRE from '@/utilities/ArraySlideSobre'
-import Carousel, { CarouselItem } from '@/components/Carousel'
+import { Carousel, CarouselItem } from '@/components/Carousel'
 
 export default function Sobre() {
   return (
