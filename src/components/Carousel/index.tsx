@@ -15,7 +15,7 @@ function CarouselItem({ children }: ICarousel) {
   return <div className={style.carouselItem}>{children}</div>
 }
 
-function Carousel({ children }: ICarousel) {
+function Carousel({ children, pagination }: ICarousel) {
   const [activeIndex, setActiveIndex] = useState(0)
   const childArray = Children.toArray(children)
   const updateIndex = useCallback(
@@ -53,14 +53,16 @@ function Carousel({ children }: ICarousel) {
         })}
       </div>
       <div className={style.carouselButtons}>
-        <button
-          onClick={() => {
-            updateIndex(activeIndex - 1)
-          }}
-          className={style.buttonArrow}
-        >
-          <IoIosArrowBack size={25} />
-        </button>
+        {pagination && (
+          <button
+            onClick={() => {
+              updateIndex(activeIndex - 1)
+            }}
+            className={style.buttonArrow}
+          >
+            <IoIosArrowBack size={25} />
+          </button>
+        )}
         <div className={style.indicators}>
           {childArray.map((_, index) => {
             return (
@@ -83,14 +85,16 @@ function Carousel({ children }: ICarousel) {
             )
           })}
         </div>
-        <button
-          onClick={() => {
-            updateIndex(activeIndex + 1)
-          }}
-          className={style.buttonArrow}
-        >
-          <IoIosArrowForward size={25} />
-        </button>
+        {pagination && (
+          <button
+            onClick={() => {
+              updateIndex(activeIndex + 1)
+            }}
+            className={style.buttonArrow}
+          >
+            <IoIosArrowForward size={25} />
+          </button>
+        )}
       </div>
     </div>
   )

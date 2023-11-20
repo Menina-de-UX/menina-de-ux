@@ -103,4 +103,5 @@ export interface IButton {
 
 export interface ICarousel {
   children: ReactNode
+  pagination?: boolean
 }

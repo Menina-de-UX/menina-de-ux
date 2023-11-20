@@ -6,15 +6,6 @@ import Tag from '@/components/common/Tag'
 // Styles
 import style from '@/styles/Sobre.module.scss'
 
-// Assets
-import MulherLendo from '../assets/mulher-lendo.webp.png'
-import MulherEstudando from '../assets/mulher-estudando.webp.png'
-import MulherAcenando from '../assets/mulher-acenando.webp.png'
-import MulherComProf from '../assets/Sobre/menina-com-professora.webp'
-import MulherComDiplo from '../assets/Sobre/menina-com-certificacao.webp'
-import HomemComCofre from '../assets/Sobre/homem-com-cofrinho.webp'
-import MulherPoderosa from '../assets/Sobre/menina-poderosa.webp'
-
 // import ITEMS_SOBRE from '@/utilities/ArraySlideSobre'
 import { Carousel, CarouselItem } from '@/components/Carousel'
 
@@ -37,7 +28,10 @@ export default function Sobre() {
 
           <div className={style.aboutMore}>
             <div className={style.image}>
-              <img src={MulherAcenando.src} alt="Menina acenando" />
+              <img
+                src="./Sobre/mulher-acenando.webp.png"
+                alt="Menina acenando"
+              />
             </div>
 
             <div className={style.descAboutMore}>
@@ -54,7 +48,10 @@ export default function Sobre() {
 
           <div className={style.aboutMoreWrap}>
             <div className={style.image}>
-              <img src={MulherEstudando.src} alt="Menina lendo um livro." />
+              <img
+                src="./Sobre/mulher-estudando.webp.png"
+                alt="Menina lendo um livro."
+              />
             </div>
 
             <div className={style.descAboutMore}>
@@ -81,7 +78,10 @@ export default function Sobre() {
 
           <div className={style.aboutMore}>
             <div className={style.image}>
-              <img src={MulherLendo.src} alt="Menina lendo um livro." />
+              <img
+                src="./Sobre/mulher-lendo.webp.png"
+                alt="Menina lendo um livro."
+              />
             </div>
 
             <div className={style.descAboutMore}>
@@ -106,7 +106,7 @@ export default function Sobre() {
               <Title type="Xl">Objetivos da Menina de UX</Title>
             </div>
 
-            <Carousel>
+            <Carousel pagination={false}>
               <CarouselItem>
                 <div className={style.contentCarousel}>
                   <div className={style.text}>
@@ -131,7 +131,7 @@ export default function Sobre() {
                     </p>
                   </div>
                   <img
-                    src={MulherComProf.src}
+                    src="./Sobre/menina-com-professora.webp"
                     alt="Menina com uma professora."
                     className={style.img}
                   />
@@ -155,7 +155,7 @@ export default function Sobre() {
                     </p>
                   </div>
                   <img
-                    src={MulherComDiplo.src}
+                    src="./Sobre/menina-com-certificacao.webp"
                     alt="Menina com uma professora."
                     className={style.img}
                   />
@@ -176,7 +176,7 @@ export default function Sobre() {
                     </p>
                   </div>
                   <img
-                    src={HomemComCofre.src}
+                    src="./Sobre/homem-com-cofrinho.webp"
                     alt="Homem com cofre."
                     className={style.img}
                   />
@@ -193,7 +193,7 @@ export default function Sobre() {
                     </p>
                   </div>
                   <img
-                    src={MulherPoderosa.src}
+                    src="./Sobre/menina-poderosa.webp"
                     alt="Girl power!"
                     className={style.img}
                   />
