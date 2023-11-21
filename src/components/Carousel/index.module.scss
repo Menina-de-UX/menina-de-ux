@@ -1,0 +1,65 @@
+@import '/src/styles/colors.module';
+
+.carousel {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inner {
+  transition: transform 0.3s;
+  white-space: nowrap;
+}
+
+.carouselItem {
+  max-width: 100%;
+  width: 100%;
+  display: inline-flex;
+  @media (max-width: 40rem) {
+    min-height: 60vh;
+  }
+}
+
+.carouselButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttonArrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  color: $blue-400;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.indicatorButtons {
+  border: none;
+  cursor: pointer;
+}
+
+.indicators > buttons {
+  margin: 5px;
+  background: none;
+}
+
+.indicatorSymbol {
+  color: $blue-400;
+  opacity: .5;
+}
+
+.indicatorSymbolActive {
+  color: $blue-400;
+}

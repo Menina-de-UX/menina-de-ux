@@ -1,3 +1,4 @@
+// import TCarousel from '@/Types/types'
 import { ReactNode } from 'react'
 
 // Interface text - Base
@@ -99,4 +100,9 @@ export interface IButton {
   icon?: React.ElementType
   url?: string
   type?: 'Blue' | 'Pink' | 'Disabled'
+}
+
+export interface ICarousel {
+  children: ReactNode
+  pagination?: boolean
 }
