@@ -1,13 +1,13 @@
 // Components
-import Head from 'next/head'
-import Title from '@/components/common/Title/Title'
-import Tag from '@/components/common/Tag'
+import Head from "next/head";
+import Title from "@/components/common/Title/Title";
+import Tag from "@/components/common/Tag";
 
 // Styles
-import style from '@/styles/Sobre.module.scss'
+import style from "@/styles/Sobre.module.scss";
 
 // import ITEMS_SOBRE from '@/utilities/ArraySlideSobre'
-import { Carousel, CarouselItem } from '@/components/Carousel'
+import { Carousel, CarouselItem } from "@/components/common/Carousel";
 
 export default function Sobre() {
   return (
@@ -38,7 +38,7 @@ export default function Sobre() {
               <Title type="Sm">Primeiramente, seja bem vindo(a)!</Title>
               <p>
                 Fico muito feliz pois sei que, se você chegou até essa página, é
-                porque quer saber mais sobre o projeto{' '}
+                porque quer saber mais sobre o projeto{" "}
                 <Tag type="Strong">Menina de UX</Tag>. Significa muito para mim!
               </p>
 
@@ -58,9 +58,9 @@ export default function Sobre() {
               <Title type="Sm">Tudo começou em 2021...</Title>
               <p>
                 Quando entrei na área de UI/UX Design, fiquei apaixonada e
-                queria muito poder{' '}
+                queria muito poder{" "}
                 <Tag type="Strong">mostrar os meus trabalhos por aí</Tag>, além
-                de que eu seguia <Tag type="Strong">profissionais da área</Tag>{' '}
+                de que eu seguia <Tag type="Strong">profissionais da área</Tag>{" "}
                 no LinkedIn e adorava as dicas que eles davam
               </p>
 
@@ -70,7 +70,7 @@ export default function Sobre() {
               </p>
 
               <p>
-                Depois de dias pensando num nome legal, cheguei em{' '}
+                Depois de dias pensando num nome legal, cheguei em{" "}
                 <Tag type="Strong">Menina de UX</Tag> e adorei!
               </p>
             </div>
@@ -204,5 +204,5 @@ export default function Sobre() {
         </section>
       </main>
     </>
-  )
+  );
 }
