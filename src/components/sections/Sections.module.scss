@@ -9,6 +9,8 @@
 
   @media (max-width: 998px) {
     flex-direction: column;
+    gap: 2.5rem;
+    
     img {
       margin-top: 3rem;
       max-width: 100%;      
@@ -32,15 +34,19 @@
     line-height: 2rem;
   }
 
-  .sectionContent h1{
-    line-height: 3rem;
+
+  @media (max-width: 998px) {
+    gap: 1rem;
+    align-items: center;
   }
+
 }
 
 .buttons {
   display: flex;
   gap: .5rem;
-
+  width: 100%;
+  
   @media (max-width: 998px) {
     flex-direction: column;
     div {

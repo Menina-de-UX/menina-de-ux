@@ -1,7 +1,8 @@
 // Components
 import Button from '../common/Button'
-import SubTitle from '../common/Subtitle/SubTitle'
 import Title from '../common/Title/Title'
+import SubTitle from '../common/Subtitle/SubTitle'
+
 // Utilities
 import Image from 'next/image'
 import NewsImage from '@/../public/Sections/mulher-recebendo-novidades.svg'

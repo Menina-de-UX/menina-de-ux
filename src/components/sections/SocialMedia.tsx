@@ -1,7 +1,7 @@
 // Components
 import Button from '../common/Button'
-import SubTitle from '../common/Subtitle/SubTitle'
 import Title from '../common/Title/Title'
+import SubTitle from '../common/Subtitle/SubTitle'
 
 // Styles
 import styled from './Sections.module.scss'
