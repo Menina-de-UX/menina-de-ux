@@ -98,7 +98,7 @@ export interface IButton {
   children: ReactNode
   icon?: React.ElementType
   url?: string
-  type?: 'Blue' | 'Pink' | 'Disabled'
+  type?: 'Blue' | 'Pink' | 'OutlinePink' | 'Disabled'
 }
 
 export interface ICarousel {
