@@ -32,7 +32,7 @@ export default function Home() {
             </p>
             <div className={style.buttons}>
               <Button type="Blue">Descobrir cursos</Button>
-              <Button type="Pink">Processos seletivos</Button>
+              <Button type="OutlinePink">Processos seletivos</Button>
             </div>
             <img src="./Home/mulher-estudando.webp.png" alt="" />
           </div>
