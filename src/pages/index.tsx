@@ -1,10 +1,11 @@
 // Components
 import Head from 'next/head'
 import Title from '@/components/common/Title/Title'
+import Button from '@/components/common/Button'
+import SubTitle from '@/components/common/Subtitle/SubTitle'
 
 // Styles
 import style from '@/styles/Home.module.scss'
-import Button from '@/components/common/Button'
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
             <img src="./Home/mulher-estudando.webp.png" alt="" />
           </div>
         </section>
-        <section id={style.section}>
+        <section id={style.sectionWhite}>
           <div className={style.image}>
             <img src="./Home/aprovado.webp.png" alt="" />
           </div>
@@ -51,7 +52,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id={style.section}>
+        <section id={style.sectionWhite}>
           <div className={style.text}>
             <Title type="Sm">Crie seu primeiro projeto em UX Design</Title>
             <p>
@@ -69,6 +70,30 @@ export default function Home() {
           </div>
           <div className={style.image}>
             <img src="./Home/mulher-designer.webp.png" alt="" />
+          </div>
+        </section>
+        <section id={style.section}>
+          <div className={style.titles}>
+            <SubTitle type="Lg">Cursos Top</SubTitle>
+            <Title type="Xs">Os melhores em várias áreas</Title>
+          </div>
+          <div className={style.cards}>
+            <div className={style.card}>
+              <img src="./Home/cursoemvideo.webp.png" alt="" />
+              <SubTitle type="Default">Curso em Vídeo</SubTitle>
+            </div>
+            <div className={style.card}>
+              <img src="./Home/dio.webp.png" alt="" />
+              <SubTitle type="Default">DIO</SubTitle>
+            </div>
+            <div className={style.card}>
+              <img src="./Home/Logo.png" alt="" />
+              <SubTitle type="Default">Estação Hack</SubTitle>
+            </div>
+            <div className={style.card}>
+              <img src="./Home/Logo-1.png" alt="" />
+              <SubTitle type="Default">Mundo SENAI</SubTitle>
+            </div>
           </div>
         </section>
       </main>
