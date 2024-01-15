@@ -31,6 +31,9 @@
   flex-direction: column;
   justify-content: center;
   gap: 3rem;
+  @media (max-width: 40rem) {
+    gap: 5rem;    
+  }
 }
 
 .section {
