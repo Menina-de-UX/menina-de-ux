@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={style.home}>
-        <section id={style.section}>
+        <section className={style.section}>
           <div className={style.text}>
             <Title type="Default">Ajudando meninas como eu</Title>
             <p>
@@ -36,7 +36,7 @@ export default function Home() {
             <img src="./Home/mulher-estudando.webp.png" alt="" />
           </div>
         </section>
-        <section id={style.sectionWhite}>
+        <section className={style.section}>
           <div className={style.image}>
             <img src="./Home/aprovado.webp.png" alt="" />
           </div>
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id={style.sectionWhite}>
+        <section className={style.section}>
           <div className={style.text}>
             <Title type="Sm">Crie seu primeiro projeto em UX Design</Title>
             <p>
@@ -72,7 +72,7 @@ export default function Home() {
             <img src="./Home/mulher-designer.webp.png" alt="" />
           </div>
         </section>
-        <section id={style.section}>
+        <section className={style.section}>
           <div className={style.titles}>
             <SubTitle type="Lg">Cursos Top</SubTitle>
             <Title type="Xs">Os melhores em várias áreas</Title>
@@ -94,6 +94,67 @@ export default function Home() {
               <img src="./Home/Logo-1.png" alt="" />
               <SubTitle type="Default">Mundo SENAI</SubTitle>
             </div>
+          </div>
+          <div className={style.buttons} style={{ width: '100%' }}>
+            <Button type="Blue">Conhecer mais cursos</Button>
+          </div>
+        </section>
+        <section className={style.section}>
+          <div className={style.titles}>
+            <SubTitle type="Lg">Últimos Processos Seletivos</SubTitle>
+            <Title type="Xs">Para você ser o melhor no que faz</Title>
+          </div>
+          <div className={style.cards}>
+            <div className={style.card}>
+              <img src="./Home/soul.png" alt="" />
+              <SubTitle type="Default">Soul Bilíngue</SubTitle>
+            </div>
+            <div className={style.card}>
+              <img src="./Home/martech.png" alt="" />
+              <SubTitle type="Default">Martech Academy</SubTitle>
+            </div>
+            <div className={style.card}>
+              <img src="./Home/eucapacito.png" alt="" />
+              <SubTitle type="Default">
+                Capacitação introdução à programação
+              </SubTitle>
+            </div>
+            <div className={style.card}>
+              <img src="./Home/santanderbolsas.png" alt="" />
+              <SubTitle type="Default">Bolsas Santander</SubTitle>
+            </div>
+          </div>
+        </section>
+        <section className={style.section}>
+          <div className={style.text}>
+            <Title type="Xs">
+              Quer ficar por dentro de todas as novidades?
+            </Title>
+            <p>
+              Entre no canal do Telegram da Menina de UX e fique sabendo de
+              todos os cursos e processos seletivos novos!
+            </p>
+            <Button type="Blue">Entrar no canal!</Button>
+          </div>
+          <div className={style.image}>
+            <img src="./Home/mulher-recebendo-novidades.webp.png" alt="" />
+          </div>
+        </section>
+        <section className={style.section}>
+          <div className={style.text}>
+            <Title type="Xs">Redes Sociais</Title>
+            <p>
+              Me acompanhe nas redes sociais! Se quiser conversar sobre
+              projetos, eventos e afins tem meu e-mail ai!
+            </p>
+            <div className={style.buttons}>
+              <Button type="Blue">Email</Button>
+              <Button type="Blue">Instagram</Button>
+              <Button type="Blue">LinkedIn</Button>
+            </div>
+          </div>
+          <div className={style.image}>
+            <img src="./Home/mulher-redes-sociais.webp.png" alt="" />
           </div>
         </section>
       </main>
