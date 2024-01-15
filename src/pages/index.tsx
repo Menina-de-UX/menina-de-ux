@@ -124,6 +124,9 @@ export default function Home() {
               <SubTitle type="Default">Bolsas Santander</SubTitle>
             </div>
           </div>
+          <div className={style.buttons} style={{ width: '100%' }}>
+            <Button type="Blue">Conhecer mais cursos</Button>
+          </div>
         </section>
         <section className={style.section}>
           <div className={style.text}>
